@@ -16,7 +16,7 @@ except Error as e:
 
 def database():
     try:
-        connection.execute("CREATE DATABASE alx_book_store;")
+        connection.execute("CREATE DATABASE IF NOT EXISTS alx_book_store;")
         mydb.commit()
         print("Database 'alx_book_store' created successfully!")
         
